@@ -1,0 +1,72 @@
+export const robots = [
+  {
+    id: 1,
+    name: 'Lucy Finnie',
+    username: 'Pauline',
+    age: '26',
+    skill: 'Consulting',
+  },
+  {
+    id: 2,
+    name: 'Hakeem Dahou',
+    username: 'Roger',
+    age: '66',
+    skill: 'Coding',
+  },
+  {
+    id: 3,
+    name: 'Cameron Thomas',
+    username: 'Samantha',
+    age: '45',
+    skill: 'Plumbing',
+  },
+  {
+    id: 4,
+    name: 'Lee Wheatfield',
+    username: 'Karianne',
+    age: '62',
+    skill: 'Engineering',
+  },
+  {
+    id: 5,
+    name: 'Luke Maldeni',
+    username: 'Kamren',
+    age: '28',
+    skill: 'Marketing',
+  },
+  {
+    id: 6,
+    name: 'Speed Barton',
+    username: 'Leopoldo_Corkery',
+    age: '105',
+    skill: 'Babysitting',
+  },
+  {
+    id: 7,
+    name: 'Jason Goss',
+    username: 'Elwyn.Skiles',
+    age: '88',
+    skill: 'Cooking',
+  },
+  {
+    id: 8,
+    name: 'Alex Macarthy',
+    username: 'Maxime_Nienow',
+    age: '31',
+    skill: 'Accounting',
+  },
+  {
+    id: 9,
+    name: 'Molly Williams',
+    username: 'Delphine',
+    age: '24',
+    skill: 'Sleeping',
+  },
+  {
+    id: 10,
+    name: 'Zack Dapoo',
+    username: 'Moriah.Stanton',
+    age: '35',
+    skill: 'Baking',
+  }
+];
