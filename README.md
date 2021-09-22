@@ -13,4 +13,6 @@ My First Project using React. A simple website but one which I found challenging
 
 ![2021-09-22 (2)](https://user-images.githubusercontent.com/64092508/134323588-f1ed014e-abd7-4783-b7f1-f20510d1c66a.png)
 
+TIP: Decide on how to break down to components and structure the application, decide on the state and where it lives, and what changes when the state changes. Doing these 3 things well will make your program as efficient and fast as it can be.
+
 I hope you enjoy looking through this project, and as I gain more experience I'll be making changes and updating. 
