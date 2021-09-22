@@ -8,3 +8,7 @@ My First Project using React. A simple website but one which I found challenging
 - We can use state, a plain javascript object, to describe the current components situation. A parent feeds state to the child and the child will then receive props and re-render. To do this we use the this.setState() method.
 - When an event occurs in the child component, it will trigger a change in the state object, meaning the component will re-render. 
 - We can use JSX in React to allow us to write HTML elements in Javascript. Remember to use className rather than class. 
+- We have one way data flow in react from parents to children
+![2021-09-22 (2)](https://user-images.githubusercontent.com/64092508/134323588-f1ed014e-abd7-4783-b7f1-f20510d1c66a.png)
+
+I hope you enjoy looking through this project, and as I gain more experience I'll be making changes and updating. 
