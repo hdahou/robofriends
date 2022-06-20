@@ -1,7 +1,6 @@
 import React, { Component } from 'react'; 
 import CardList from '../components/CardList';
-import SearchBox from '../components/SearchBox'; 
-import { robots } from '../components/Robots';
+import SearchBox from '../components/SearchBox';
 import Scroll from '../components/Scroll.js';
 import ErrorBoundary  from '../components/ErrorBoundary';
 import './App.css';
@@ -10,17 +9,16 @@ class App extends Component {
 	constructor () {
 		super()
 		this.state = {
-			robots: robots,
+			robots: [],
 			searchfield: ' '
 		}
 	}
 
-	// componentDidMount () {
-	// 	fetch('https://jsonplaceholder.typicode.com/users')
-	// 	.then(response => response.json())
-	// 	.then(users => {this.setState({ robots : users})}); 
-	// }
-	// We could use the above to get users from an API but for this page I'd like it to be the users I've created
+	componentDidMount () {
+		fetch('https://jsonplaceholder.typicode.com/users')
+		.then(response => response.json())
+		.then(users => {this.setState({ robots : users})}); 
+	}
 
 	onSearchChange = (event) => {
 			this.setState({searchfield: event.target.value})
@@ -30,7 +28,9 @@ class App extends Component {
 			const filteredRobot = robots.filter(robot => {
 			return robot.name.toLowerCase().includes(searchfield.toLowerCase());
 		})
-		return (
+		return !robots.length ?
+			<h1>Loading</h1> :
+		(
 			<div className = 'tc'>
 					<h1 className = 'f1'>RoboFriends - Hire a Robot today!</h1>
 					<SearchBox searchChange = {this.onSearchChange}/> 

@@ -11,8 +11,7 @@ const CardList = ({ robots }) => {
 							key={i} 
 							id={robots[i].id} 
 							name={robots[i].name} 
-							age={robots[i].age}
-							skill ={robots[i].skill}
+							email={robots[i].email}
 							/>
 					);
 				})
